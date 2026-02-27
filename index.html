@@ -1,15 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Email Link Protector</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Email Link Protector | Cybersecurity Extension</title>
+
+<style>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    background: #0a192f;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #00d4ff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00d4ff;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to right, #0a192f, #020c1b);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #00d4ff;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #00aacc;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features {
+    background: #f4f4f4;
+}
+
+.feature-box {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+    color: #0a192f;
+}
+
+/* Footer */
+footer {
+    background: #0a192f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+
 </head>
 <body>
 
-<h1>Email Link Protector</h1>
-<p>This is my cybersecurity extension website.</p>
+<!-- Navbar -->
+<nav>
+<h2>Email Link Protector</h2>
 
-<script src="script.js"></script>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#how">How It Works</a></li>
+<li><a href="#download">Download</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+
+<h1>Protect Your Email from Phishing Attacks</h1>
+
+<p>
+Email Link Protector is a powerful cybersecurity browser extension that detects and blocks malicious phishing links in Gmail and Outlook using real-time threat intelligence.
+</p>
+
+<button class="btn" onclick="downloadExtension()">Download Extension</button>
+
+</section>
+
+<!-- Features -->
+<section class="features" id="features">
+
+<h2>Features</h2>
+
+<div class="feature-box">
+<h3>Real-Time Protection</h3>
+<p>Detects phishing links instantly before you click.</p>
+</div>
+
+<div class="feature-box">
+<h3>Threat Intelligence</h3>
+<p>Uses PhishTank and VirusTotal APIs.</p>
+</div>
+
+<div class="feature-box">
+<h3>Works in Gmail & Outlook</h3>
+<p>Protects your web-based email platforms.</p>
+</div>
+
+<div class="feature-box">
+<h3>Safe Browsing Alerts</h3>
+<p>Shows warning before opening malicious links.</p>
+</div>
+
+</section>
+
+<!-- How it works -->
+<section id="how">
+
+<h2>How It Works</h2>
+
+<p>
+The extension monitors email links, checks them against trusted threat intelligence databases,
+and alerts users before accessing dangerous websites.
+</p>
+
+</section>
+
+<!-- Download -->
+<section id="download">
+
+<h2>Download Email Link Protector</h2>
+
+<p>Install the extension and secure your email today.</p>
+
+<button class="btn" onclick="downloadExtension()">Download Now</button>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: support@emailprotector.com</p>
+<p>Developer: Pavan Kumar</p>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+<p>© 2026 Email Link Protector | Cybersecurity Project</p>
+
+</footer>
+
+<!-- Script -->
+<script>
+
+function downloadExtension()
+{
+    alert("Extension download will be available soon.");
+}
+
+</script>
+
 </body>
 </html>
